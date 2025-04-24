@@ -1,14 +1,14 @@
 context:
   name: pkn
-  version: 0.1.0
+  version: "0.1.1"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-    url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-    sha256: 338dae41d1d93df106c8910b2e594a94a866aaa3fa08804a6c55af492d71adcd
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: e07f2e277e5f2f826de8d79cd715b5983f5c36754774b84a134a6670501a9623
 
 build:
   number: 0
