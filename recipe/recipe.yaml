@@ -22,6 +22,8 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
+    - ccflow
+    - colorlog
     - pydantic
 
 tests:
