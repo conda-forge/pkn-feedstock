@@ -1,6 +1,6 @@
 context:
   name: pkn
-  version: "0.2.0"
+  version: "0.2.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: c41d9f25618776747dec057c62428e500c4d2b4d6b0620256c40e5807f0d2fa6
+  sha256: a518db226436322caffcc5eaf68fbe97ff2adb6f36c0e0882db45a4b492f23e3
 
 build:
   number: 0
@@ -20,11 +20,11 @@ requirements:
     - python ${{ python_min }}.*
     - pip
     - hatchling
+    - hatch-multi
   run:
     - python >=${{ python_min }}
     - ccflow
     - colorlog
-    - emails
     - pydantic
 
 tests:
