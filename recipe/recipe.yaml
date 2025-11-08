@@ -23,8 +23,12 @@ requirements:
     - hatch-multi
   run:
     - python >=${{ python_min }}
-    - ccflow
+    - boto3
+    - botocore
+    - ccflow >=0.6.10
     - colorlog
+    - emails
+    - jinja2
     - pydantic
 
 tests:
