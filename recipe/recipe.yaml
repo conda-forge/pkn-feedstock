@@ -31,6 +31,10 @@ tests:
   - python:
       imports:
         - pkn
+        - pkn.ccflow
+        - pkn.infra
+        - pkn.logging
+        - pkn.pydantic
       pip_check: true
       python_version: ${{ python_min }}.*
 
