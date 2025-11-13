@@ -1,6 +1,6 @@
 context:
   name: pkn
-  version: "0.3.0"
+  version: "0.3.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4997fc52bff26203a0ca5b9b5b9a1760b06c549b5a6244274a55963e887f8e53
+  sha256: d68a6a6fcf53474cff235dc7ade870c560349391b7dd732a564a693ac9f0d541
 
 build:
   number: 0
