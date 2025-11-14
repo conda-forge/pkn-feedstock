@@ -26,6 +26,8 @@ requirements:
     - boto3
     - botocore
     - ccflow >=0.6.10
+    - ccflow-s3
+    - ccflow-email
     - colorlog
     - emails
     - jinja2
