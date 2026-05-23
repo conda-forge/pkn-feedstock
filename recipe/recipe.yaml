@@ -20,16 +20,9 @@ requirements:
     - python ${{ python_min }}.*
     - pip
     - hatchling
-    - hatch-multi
   run:
     - python >=${{ python_min }}
-    - boto3
-    - botocore
-    - ccflow >=0.6.10
-    - ccflow-s3
-    - ccflow-email
     - colorlog
-    - emails
     - jinja2
     - pydantic
 
@@ -37,7 +30,6 @@ tests:
   - python:
       imports:
         - pkn
-        - pkn.ccflow
         - pkn.infra
         - pkn.logging
         - pkn.pydantic
